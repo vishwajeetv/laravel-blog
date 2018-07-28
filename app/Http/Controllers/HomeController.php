@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\User, App\Post;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $user = auth()->user();
+        Log::info($user);
+        $posts = Post::all();
+        return view('home',['posts' => $posts]);
     }
 }

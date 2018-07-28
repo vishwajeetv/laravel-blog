@@ -14,6 +14,11 @@
                         </div>
                     @endif
 
+                        @if( Auth::check() )
+                            @if( Auth::user()->can('read-post') )
+                                {{$posts}}
+                            @endif
+                        @endif
                     You are logged in!
                 </div>
             </div>

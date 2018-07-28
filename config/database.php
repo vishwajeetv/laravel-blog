@@ -82,7 +82,7 @@ return [
             'driver'   => 'mongodb',
             'host'     => env('DB_HOST', 'localhost'),
             'port'     => env(27017, 27017),
-            'database' => env('blog'),
+            'database' => 'blog',
             'username' => env(''),
             'password' => env(''),
             'options'  => [
