@@ -2,6 +2,8 @@
 
 A (very) simple Laravel blogging app.
 
+**[Demo Video](https://youtu.be/47CwIph99RY)**
+
 ## Technologies
 * PHP 7.2
 * Laravel 5.6
