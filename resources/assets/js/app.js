@@ -20,3 +20,11 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    let elements = document.getElementsByClassName('editable');
+      console.log({elements});
+    [].forEach.call(elements, function (element) {
+        element.contentEditable='true';
+    });
+});
