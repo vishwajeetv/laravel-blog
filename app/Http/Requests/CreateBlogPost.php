@@ -13,7 +13,7 @@ class CreateBlogPost extends FormRequest
      */
     public function authorize()
     {
-        return $user = auth()->user()->can('update-post');
+        return $user = auth()->user()->can('create-post');
     }
 
     /**

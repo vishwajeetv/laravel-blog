@@ -38,6 +38,7 @@ class HomeController extends Controller
         $validatedInput = $request->validated();
 
         $post = new Post();
+
         $post->postTitle = $validatedInput['postTitle'];
         $post->postText = $validatedInput['postText'];
         $post->username = $validatedInput['username'];
