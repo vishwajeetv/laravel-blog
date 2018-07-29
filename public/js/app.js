@@ -13894,16 +13894,14 @@ window.Vue = __webpack_require__(36);
 Vue.component('example-component', __webpack_require__(39));
 
 var app = new Vue({
-    el: '#app'
+  el: '#app'
 });
 
-document.addEventListener("DOMContentLoaded", function (event) {
-    var elements = document.getElementsByClassName('editable');
-    console.log({ elements: elements });
-    [].forEach.call(elements, function (element) {
-        element.contentEditable = 'true';
-    });
-});
+document.addEventListener("DOMContentLoaded", function (event) {});
+
+window.showAddPostForm = function () {
+  document.getElementById("newPostForm").style.display = 'block';
+};
 
 /***/ }),
 /* 13 */

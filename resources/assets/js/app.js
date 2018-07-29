@@ -22,9 +22,9 @@ const app = new Vue({
 });
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    let elements = document.getElementsByClassName('editable');
-      console.log({elements});
-    [].forEach.call(elements, function (element) {
-        element.contentEditable='true';
-    });
+
 });
+
+window.showAddPostForm = function(){
+    document.getElementById("newPostForm").style.display = 'block';
+}
